@@ -1,0 +1,97 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../node_modules/mdbootstrap/scss/mdb.scss";
+@import "../node_modules/animate.css/animate.min.css";
+@import "../node_modules/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css";
+@import "../node_modules/modularscale-sass/libsass/scss/main.scss";
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600|Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+
+// Typography
+$modularscale: (
+  base: 1rem,
+  ratio: $minor-third
+);
+$fontType: p, h6, h5, h4, h3, h2, h1;
+@for $i from 1 through 7{
+    #{ nth($fontType, $i) }{
+        @if $i > 1 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: ms($i - 2);
+            color: $hersa-orange;
+        } @else {
+            font-family: 'Open Sans', sans-serif;
+            font-size: ms($i - 1);
+            font-weight: 400;
+            color: $hersa-gray;
+        }
+    }
+}
+a{
+    font-family: 'Open Sans', sans-serif;
+}
+
+// Buttons
+.btn-hersa{
+    @extend .btn-primary;
+    background-color: $hersa-yellow !important;
+    &:hover, &:focus, &.focus, &:active, &.active{
+        background-color: darken($hersa-yellow, 5%) !important;
+    }
+}
+.btn-outline-white{
+    @extend .btn-outline-primary;
+    border-color: white;
+    color: white;
+    &:hover, &:focus, &.focus, &:active, &.active{
+        background-color: white !important;
+        color: $hersa-red !important;
+    }
+}
+
+// General
+.navbar{
+    background: $hersa-orange;
+}
+footer{
+    background: $hersa-red;
+    h5,p{
+        color: white;
+    }
+    p{
+        font-size: ms(-1);
+    }
+    .footer-copyright{
+        p{
+            margin-bottom: 0px;
+        }
+    }
+}
+
+// Inicio
+section#carousel{
+    position: relative;
+    #nobillo{
+        position: absolute;
+        left: 1rem;
+        top: 1rem;
+        z-index: 99;
+        background: rgba(255,255,255,0.9);
+        img{
+            height: 70px;
+            width: auto;
+        }
+    }
+}
+section#productos{
+    .card-title{
+        color: $hersa-orange;
+    }
+}
+section#slogan{
+    background: $hersa-orange;
+    h2{
+        color: white;
+    }
+}

@@ -3,6 +3,7 @@
 @import "../node_modules/animate.css/animate.min.css";
 @import "../node_modules/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css";
 @import "../node_modules/modularscale-sass/libsass/scss/main.scss";
+@import "../node_modules/lightbox2/dist/css/lightbox.min.css";
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600|Open+Sans:400,700');
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
@@ -35,9 +36,9 @@ a{
 // Buttons
 .btn-hersa{
     @extend .btn-primary;
-    background-color: $hersa-yellow !important;
+    background-color: $hersa-orange !important;
     &:hover, &:focus, &.focus, &:active, &.active{
-        background-color: darken($hersa-yellow, 5%) !important;
+        background-color: darken($hersa-orange, 5%) !important;
     }
 }
 .btn-outline-white{
@@ -49,10 +50,20 @@ a{
         color: $hersa-red !important;
     }
 }
+.btn{
+    h4{
+        color: white;
+        margin-bottom: 0px;
+    }
+}
 
 // General
 .navbar{
     background: $hersa-orange;
+    p{
+        margin-bottom: 0px;
+        color: white;
+    }
 }
 footer{
     background: $hersa-red;
@@ -94,4 +105,17 @@ section#slogan{
     h2{
         color: white;
     }
+}
+
+
+// PRODUCTOS
+section.image-intro{
+    height: 60vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+section#intro-secas{
+    background-image: url('../img/secas/seca-1.jpg');
 }

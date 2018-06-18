@@ -29,7 +29,8 @@ $fontType: p, h6, h5, h4, h3, h2, h1;
         }
     }
 }
-a{
+a:not(.carousel-control-next),
+a:not(.carousel-control-prev){
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -66,7 +67,7 @@ a{
     }
 }
 footer{
-    background: $hersa-red;
+    background: darken($hersa-red,15%);
     h5,p{
         color: white;
     }
@@ -115,7 +116,40 @@ section.image-intro{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
+    h1{
+        color: white;
+    }
+}
+section.gallery{
+    div.view:hover{
+        cursor: zoom-in;
+    }
 }
 section#intro-secas{
     background-image: url('../img/secas/seca-1.jpg');
+}
+
+
+/* Animations
+*
+-----------------------*/
+.arrow-animation{
+  animation: arrowFrames ease-out 2s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+}
+
+@keyframes arrowFrames{
+  0% {
+    transform:  translate(0px,50px)  ;
+    opacity: 0;
+  }
+  40% {
+    transform:  translate(0px,30px)  ;
+    opacity: 1;
+  }
+  100% {
+    transform:  translate(0px,50px)  ;
+    opacity: 0;
+  }
 }

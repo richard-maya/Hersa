@@ -33,6 +33,9 @@ a:not(.carousel-control-next),
 a:not(.carousel-control-prev){
     font-family: 'Open Sans', sans-serif;
 }
+label,input{
+    font-family: 'Open Sans', sans-serif;
+}
 
 // Buttons
 .btn-hersa{
@@ -105,6 +108,28 @@ section#slogan{
     background: $hersa-orange;
     h2{
         color: white;
+    }
+}
+section#contact{
+    #contact-info{
+        i{
+            color: $hersa-orange;
+        }
+        p{
+            font-size: ms(1);
+        }
+        a{
+            color: $hersa-gray;
+            &:hover{
+                color: $hersa-orange;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+section#sitemap{
+    li.list-group-item{
+        font-family: 'Open Sans', sans-serif;
     }
 }
 

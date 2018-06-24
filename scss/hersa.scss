@@ -170,6 +170,27 @@ section#intro-adaptaciones{
 }
 
 
+/* Gallery
+*
+-----------------------*/
+section.gallery{
+    .grid{
+        column-count: 4;
+        @include media-breakpoint-down(sm) {
+            column-count: 1;
+        }
+        @include media-breakpoint-only(md) {
+            column-count: 2;
+        }
+
+        .grid-item{
+            padding: 0.5rem;
+        }
+    }
+}
+
+
+
 /* Animations
 *
 -----------------------*/

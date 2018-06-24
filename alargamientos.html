@@ -52,14 +52,14 @@
             <li class="nav-item">
                 <a class="nav-link" href="index.html">Inicio</a>
             </li>
-            <li class="nav-item dropdown active">
+            <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" id="navbar-productos" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Productos</a>
                 <div class="dropdown-menu dropdown-primary" aria-labelledby="navbar-productos">
-                    <a class="dropdown-item" href="cajas-secas.html">Cajas secas</a>
-                    <a class="dropdown-item" href="alargamientos.html">Alargamientos</a>
+                    <a class="dropdown-item" href="cajas-secas.html">Cajas secas, de copete y cuadradas</a>
+                    <a class="dropdown-item" href="alargamientos.html">Alargamientos y acorazados</a>
                     <a class="dropdown-item" href="carrocerias.html">Carrocerías</a>
-                    <a class="dropdown-item" href="cajas-refrigeradas.html">Cajas refrigeradas</a>
-                    <a class="dropdown-item" href="adaptaciones.html">Adaptaciones</a>
+                    <a class="dropdown-item" href="cajas-refrigeradas.html">Cajas de refrigeración</a>
+                    <a class="dropdown-item" href="adaptaciones.html">Adaptaciones y trabajos especiales</a>
                 </div>
             </li>
             <li class="nav-item">
@@ -81,7 +81,7 @@
 <section class="view image-intro mt-5" id="intro-alargamientos">
     <div class="mask flex-center rgba-black-light">
         <div>
-            <h1 class="mt-0 mb-3 pt-4 pt-md-0 text-center text-uppercase">Alargamientos y acorazados</h1>
+            <h1 class="mt-0 mb-3 pt-4 pt-md-0 text-center text-uppercase wow fadeInUp">Alargamientos y acorazados</h1>
             <h1 class="text-center"><i class="fas fa-chevron-down fa-lg arrow-animation"></i></h1>
         </div>
     </div>
@@ -95,8 +95,8 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-12 col-md-8 col-lg-6">
-                <p>Nuestra experiencia en el mercado nos abre las puertas para realizarles trabajos de alargado y acorazado de un excelente nivel y de acuerdo a la medida que el cliente lo requiera.</p>
-                <p>Siempre teniendo en cuenta el trabajo, la calidad, tiempo de entrega y seguridad de su unidad.</p>
+                <p class="wow fadeInUp">Nuestra experiencia en el mercado nos abre las puertas para realizarles trabajos de alargado y acorazado de un excelente nivel y de acuerdo a la medida que el cliente lo requiera.</p>
+                <p class="wow fadeInUp">Siempre teniendo en cuenta el trabajo, la calidad, tiempo de entrega y seguridad de su unidad.</p>
             </div>
         </div>
     </div>
@@ -110,15 +110,15 @@
         <div class="row justify-content-center">
             <div class="col-12 col-md-6 col-lg-4">
                 <a href="img/alargamientos/alargamiento-1.jpg" data-lightbox="roadtrip" data-title="Alargamientos y acorazados">
-                    <div class="view zoom z-depth-1">
-                        <img src="img/alargamientos/thumbs/alargamiento-1.jpg" class="img-fluid z-depth-1" alt="Alargamientos y acorazados">
+                    <div class="view zoom z-depth-1 wow fadeIn">
+                        <img src="img/alargamientos/thumbs/alargamiento-1.jpg" class="img-fluid" alt="Alargamientos y acorazados">
                         <div class="mask flex-center"></div>
                     </div>
                 </a>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
                 <a href="img/alargamientos/alargamiento-2.jpg" data-lightbox="roadtrip" data-title="Alargamientos y acorazados">
-                    <div class="view zoom z-depth-1">
+                    <div class="view zoom z-depth-1 wow fadeIn">
                         <img src="img/alargamientos/thumbs/alargamiento-2.jpg" class="img-fluid" alt="Alargamientos y acorazados">
                         <div class="mask flex-center"></div>
                     </div>
@@ -137,7 +137,7 @@
             <div class="col-12 col-md-6 col-lg-4 text-center">
                 <a href="contacto.html">
                     <button type="button" class="btn btn-hersa btn-block waves-effect btn-lg">
-                        <h4><i class="fas fa-thumbs-up mr-3"></i>Cotizar</h4>
+                        <h4 class="wow fadeInUp"><i class="fas fa-thumbs-up mr-3"></i>Cotizar</h4>
                     </button>
                 </a>
             </div>
@@ -208,7 +208,7 @@
                         San Miguel Toto, Metepec, Méx.</a>
                     </li>
                     <li class="mb-1"><span class="fa-li"><i class="fa fa-envelope"></i></span>
-                        <a href="mailto:contacto@carroceriashersa.mx">contacto@carroceriashersa.mx</a>
+                        <a href="mailto:ventas@carroceriashersa.mx">ventas@carroceriashersa.mx</a>
                     </li>
                     <li class="mb-1"><span class="fa-li"><i class="fa fa-phone"></i></span>
                         <a href="tel:2325828">2-32-58-28</a> &nbsp; <a href="tel:2325984">2-32-59-84</a> <br>
@@ -245,5 +245,16 @@
 <script src="node_modules/wowjs/dist/wow.min.js"></script>
 <script src="node_modules/imagesloaded/imagesloaded.pkgd.min.js"></script>
 <script src="node_modules/lightbox2/dist/js/lightbox.min.js"></script>
+<script type="text/javascript">
+var wow = new WOW(
+  {
+    boxClass:     'wow',
+    animateClass: 'animated',
+    offset:       30,
+    mobile:       true
+  }
+);
+wow.init();
+</script>
 </body>
 </html>

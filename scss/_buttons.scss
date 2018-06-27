@@ -1,0 +1,23 @@
+// Buttons
+.btn-hersa{
+    @extend .btn-primary;
+    background-color: $hersa-orange !important;
+    &:hover, &:focus, &.focus, &:active, &.active{
+        background-color: darken($hersa-orange, 5%) !important;
+    }
+}
+.btn-outline-white{
+    @extend .btn-outline-primary;
+    border-color: white;
+    color: white;
+    &:hover, &:focus, &.focus, &:active, &.active{
+        background-color: white !important;
+        color: $hersa-red !important;
+    }
+}
+.btn{
+    h4{
+        color: white;
+        margin-bottom: 0px;
+    }
+}

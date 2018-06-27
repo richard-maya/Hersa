@@ -1,0 +1,26 @@
+
+// General
+.navbar{
+    background: $hersa-orange;
+    p{
+        margin-bottom: 0px;
+        color: white;
+    }
+}
+footer{
+    background: darken($hersa-red,15%);
+    h5,p{
+        color: white;
+    }
+    p{
+        font-size: ms(-1);
+    }
+    .footer-copyright{
+        p{
+            margin-bottom: 0px;
+        }
+    }
+}
+div[itemscope]{
+    display: none;
+}

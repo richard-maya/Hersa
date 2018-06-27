@@ -1,0 +1,28 @@
+// Typography
+$modularscale: (
+  base: 1rem,
+  ratio: $minor-third
+);
+$fontType: p, h6, h5, h4, h3, h2, h1;
+@for $i from 1 through 7{
+    #{ nth($fontType, $i) }{
+        @if $i > 1 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: ms($i - 2);
+            color: $hersa-orange;
+        } @else {
+            font-family: 'Open Sans', sans-serif;
+            font-size: ms($i - 1);
+            font-weight: 400;
+            color: $hersa-gray;
+        }
+    }
+}
+a:not(.carousel-control-next),
+a:not(.carousel-control-prev){
+    font-family: 'Open Sans', sans-serif;
+}
+label,input{
+    font-family: 'Open Sans', sans-serif;
+}

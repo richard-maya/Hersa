@@ -5,103 +5,25 @@
 @import "../node_modules/modularscale-sass/libsass/scss/main.scss";
 @import "../node_modules/lightbox2/dist/css/lightbox.min.css";
 
+@import "animations";
+@import "typography";
+@import "buttons";
+@import "general";
+
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600|Open+Sans:400,700');
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
 
-// Typography
-$modularscale: (
-  base: 1rem,
-  ratio: $minor-third
-);
-$fontType: p, h6, h5, h4, h3, h2, h1;
-@for $i from 1 through 7{
-    #{ nth($fontType, $i) }{
-        @if $i > 1 {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 600;
-            font-size: ms($i - 2);
-            color: $hersa-orange;
-        } @else {
-            font-family: 'Open Sans', sans-serif;
-            font-size: ms($i - 1);
-            font-weight: 400;
-            color: $hersa-gray;
-        }
-    }
-}
-a:not(.carousel-control-next),
-a:not(.carousel-control-prev){
-    font-family: 'Open Sans', sans-serif;
-}
-label,input{
-    font-family: 'Open Sans', sans-serif;
-}
-
-// Buttons
-.btn-hersa{
-    @extend .btn-primary;
-    background-color: $hersa-orange !important;
-    &:hover, &:focus, &.focus, &:active, &.active{
-        background-color: darken($hersa-orange, 5%) !important;
-    }
-}
-.btn-outline-white{
-    @extend .btn-outline-primary;
-    border-color: white;
-    color: white;
-    &:hover, &:focus, &.focus, &:active, &.active{
-        background-color: white !important;
-        color: $hersa-red !important;
-    }
-}
-.btn{
-    h4{
-        color: white;
-        margin-bottom: 0px;
-    }
-}
-
-// General
-.navbar{
-    background: $hersa-orange;
-    p{
-        margin-bottom: 0px;
-        color: white;
-    }
-}
-footer{
-    background: darken($hersa-red,15%);
-    h5,p{
-        color: white;
-    }
-    p{
-        font-size: ms(-1);
-    }
-    .footer-copyright{
-        p{
-            margin-bottom: 0px;
-        }
-    }
-}
-
 // Inicio
-section#carousel{
-    position: relative;
-    #nobillo{
-        position: absolute;
-        left: 1rem;
-        top: 1rem;
-        z-index: 99;
-        background: rgba(255,255,255,0.9);
-        img{
-            height: 70px;
-            width: auto;
-        }
-    }
-}
 section#productos{
     .card-title{
         color: $hersa-orange;
+    }
+}
+section#process{
+    .carousel-item{
+        h5,p{
+            color: white;
+        }
     }
 }
 section#slogan{
@@ -187,29 +109,4 @@ section.gallery{
             padding: 1rem;
         }
     }
-}
-
-
-/* Animations
-*
------------------------*/
-.arrow-animation{
-  animation: arrowFrames ease-out 2s;
-  animation-iteration-count: infinite;
-  transform-origin: 50% 50%;
-}
-
-@keyframes arrowFrames{
-  0% {
-    transform:  translate(0px,50px)  ;
-    opacity: 0;
-  }
-  40% {
-    transform:  translate(0px,30px)  ;
-    opacity: 1;
-  }
-  100% {
-    transform:  translate(0px,50px)  ;
-    opacity: 0;
-  }
 }
